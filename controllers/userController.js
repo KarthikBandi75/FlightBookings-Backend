@@ -239,7 +239,7 @@ export const getFlights = async (req, res) => {
 
     res.status(200).json(flights);
   } catch (error) {
-    res.status(500).json({ message: `Flight search failed:Ensure You Entered Correct AIRPORT Codes` });
+    res.status(500).json({ message: `Please Enter Correct AIRPORT Codes` });
   }
 };
 
