@@ -134,7 +134,7 @@ export const forgotPassword = async (req, res) => {
     await transporter.sendMail({
       from:`"Cloud Trip" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: "Your OTP for Password Reset",
+      subject: "Your OTP for Email Verification",
       text: `Your OTP is ${otp}. It expires in 5 minutes.`,
     });
 
